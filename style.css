@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -12,4 +14,10 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.nav__link-box:nth-of-type(7) .nav__link-icon {
+  display: inline-block;
+  margin-top: 3rem;
 }
