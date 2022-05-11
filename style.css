@@ -25,6 +25,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
+  color: var(--light-black);
 }
 
 .container {
@@ -35,6 +36,13 @@ body {
 
   height: 100vh;
 }
+
+.main {
+  background-color: var(--light-secondary);
+  overflow-y: scroll;
+}
+
+/* ======================NAVIGATION==================== */
 
 .nav {
   background-color: var(--light-primary);
@@ -47,20 +55,8 @@ body {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
-
-.header {
-  background-color: var(--light-white);
-}
-
-.main {
-  background-color: var(--light-secondary);
-  overflow-y: scroll;
-}
-
-/* ======================NAVIGATION==================== */
 
 .nav__logo {
   font-size: 3rem;
@@ -107,17 +103,94 @@ body {
 }
 
 /* ======================HEADER======================= */
+
+.header {
+  background-color: var(--light-white);
+  padding: 2rem;
+}
+
+.header--top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.header__icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.header__box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.header__box input {
+  width: 80rem;
+  height: 2.5rem;
+  margin-left: -1.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: inherit;
+}
+
+.header--bot {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  right: 2rem;
+}
+
+.header .btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--light-white);
+  background-color: var(--light-primary);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header .btn:hover {
+  background-color: #4e38bb;
+}
+
+.header .btn:active {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(1px);
+}
+
 .my-avatar,
 .avatar {
-  height: 4rem;
-  width: 4rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 50%;
+  background-color: var(--light-secondary);
+  cursor: pointer;
 }
 
 .my-avatar--big {
   height: 8rem;
   width: 8rem;
   border-radius: 50%;
+  background-color: var(--light-secondary);
+  margin-right: 1.5rem;
 }
 
-/* ======================MAIN====================== */
+/* ======================MAIN====================== */ ;
