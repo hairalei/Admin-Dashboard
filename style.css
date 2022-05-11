@@ -129,7 +129,7 @@ body {
 }
 
 .header__box input {
-  width: 80rem;
+  width: 70rem;
   height: 2.5rem;
   margin-left: -1.5rem;
   border-radius: 1rem;
@@ -193,4 +193,4 @@ body {
   margin-right: 1.5rem;
 }
 
-/* ======================MAIN====================== */ ;
+/* ======================MAIN====================== */
