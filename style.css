@@ -21,3 +21,16 @@ body {
   display: inline-block;
   margin-top: 3rem;
 }
+
+.my-avatar,
+.avatar {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.my-avatar--big {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
