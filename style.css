@@ -6,6 +6,12 @@
   --light-tertiary: #e45858;
   --light-white: #fffffe;
   --light-black: #2b2c34;
+
+  --dark-primary: #7f5af0;
+  --dark-secondary: #72757e;
+  --dark-tertiary: #2cb67d;
+  --dark-white: #16161a;
+  --dark-black: #fffffe;
 }
 
 /* ========================GENERAL====================== */
@@ -33,7 +39,7 @@ body {
 .container {
   background-color: #555;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 4fr;
   height: 100%;
 }
@@ -47,7 +53,7 @@ body {
   grid-row-end: -1;
 
   width: 100%;
-  padding: 3rem;
+  padding: 3rem 0;
 
   display: flex;
   flex-direction: column;
@@ -95,7 +101,12 @@ body {
   transition: all 0.3s;
 }
 
-.nav__link:hover::after {
+.nav__link:focus {
+  outline: none;
+}
+
+.nav__link:hover::after,
+.nav__link:focus::after {
   width: 100%;
 }
 
@@ -127,7 +138,7 @@ body {
 }
 
 .header__box input {
-  width: 70rem;
+  width: 75rem;
   height: 2.5rem;
   margin-left: -1.5rem;
   border-radius: 1rem;
@@ -152,6 +163,7 @@ body {
   gap: 2rem;
   position: absolute;
   right: 2rem;
+  bottom: 1.5rem;
 }
 
 .header .btn {
